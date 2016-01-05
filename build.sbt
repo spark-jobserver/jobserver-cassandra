@@ -7,7 +7,8 @@ lazy val mainSettings = Seq(
 
 libraryDependencies ++= Seq(
   "com.datastax.spark" %% "spark-cassandra-connector" % "1.4.0" % "provided",
-  "spark.jobserver"    %% "job-server"                % "0.6.1" % "provided"
+  "org.apache.spark" %% "spark-core" % "1.4.1" % "provided",
+  "spark.jobserver" %% "job-server" % "0.6.0" % "provided"
 )
 
 lazy val compileScalastyle = taskKey[Unit]("compileScalastyle")
