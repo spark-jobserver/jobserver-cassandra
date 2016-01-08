@@ -1,3 +1,5 @@
+resolvers += "Job Server Bintray" at "https://dl.bintray.com/spark-jobserver/maven"
+
 lazy val mainSettings = Seq(
   name := "jobserver-cassandra",
   organization := "spark.jobserver",
