@@ -17,13 +17,18 @@
 package spark.jobserver.masterLocators.dse
 
 import com.datastax.driver.core.{ResultSet, Session}
-import org.apache.spark.SparkConf
-import org.slf4j.LoggerFactory
-import scala.collection.JavaConverters._
 import com.datastax.spark.connector.cql.CassandraConnector
+
 import com.typesafe.config.Config
-import spark.jobserver.util.SparkMasterProvider
+
+import org.apache.spark.SparkConf
+
+import org.slf4j.LoggerFactory
+
+import scala.collection.JavaConverters._
 import scala.util.{Success, Failure, Try}
+
+import spark.jobserver.util.SparkMasterProvider
 
 /**
  * The spark master node that has been elected can be determined by
