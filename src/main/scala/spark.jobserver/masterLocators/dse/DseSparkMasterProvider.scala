@@ -36,7 +36,7 @@ import spark.jobserver.util.SparkMasterProvider
  *
  * Created by ffarozan on 21/7/15.
  */
-class DseSparkMasterProvider extends SparkMasterProvider {
+object DseSparkMasterProvider extends SparkMasterProvider {
 
   val logger = LoggerFactory.getLogger(getClass)
 
